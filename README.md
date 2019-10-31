@@ -5,17 +5,22 @@ This is a serverless application which provides an API endpoint to get AWS servi
 ## Deploy the sample application
 This is a serverless application built with SAM. You may deploy this as a normal SAM application.
 
+1. Clone the repository.
+
+2. Crete the s3 bucket.
 ```bash
 sam-app$ aws s3 mb s3://BUCKET_NAME
 ```
 
-To prepare the application for deployment, use the `sam package` command.
+3. To prepare the application for deployment, use the `sam package` command.
 
 ```bash
 sam-app$ sam package \
     --output-template-file packaged.yaml \
     --s3-bucket BUCKET_NAME
 ```
+
+4. Deploy the package
 
 ```bash
 sam-app$ sam deploy \
@@ -24,7 +29,7 @@ sam-app$ sam deploy \
     --capabilities CAPABILITY_IAM
 ```
 
-After deployment is complete you can run the following command to retrieve the API Gateway Endpoint URL:
+5. After deployment is complete you can run the following command to retrieve the API Gateway Endpoint URL:
 
 ```bash
 sam-app$ aws cloudformation describe-stacks \
