@@ -11,6 +11,19 @@ Globals:
     Timeout: 20
     MemorySize: 192
 
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: aws_services
+    Description: Serverless application which provides an API endpoint to get AWS services with available regions.
+    Author: Pubudu Jayawardana
+    SpdxLicenseId: MIT License
+    LicenseUrl: LICENSE.md
+    ReadmeUrl: README.md
+    Labels: ['regions','services', 'python']
+    HomePageUrl: https://github.com/pubudusj/serverless-aws-services
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/pubudusj/serverless-aws-services
+
 Resources:
   AwsServicesFunction:
     Type: AWS::Serverless::Function
