@@ -13,10 +13,10 @@ Globals:
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: aws_services
+    Name: aws-services-by-region
     Description: Serverless application which provides an API endpoint to get AWS services with available regions.
     Author: Pubudu Jayawardana
-    SpdxLicenseId: MIT License
+    SpdxLicenseId: MIT
     LicenseUrl: LICENSE.md
     ReadmeUrl: README.md
     Labels: ['regions','services', 'python']
