@@ -7,12 +7,17 @@ This is a serverless application built with SAM. You may deploy this as a normal
 
 1. Clone the repository.
 
-2. Crete the s3 bucket.
+2. Install required packages by:
+```bash
+pip install -r requirements.txt -t .
+```
+
+3. Crete the s3 bucket.
 ```bash
 sam-app$ aws s3 mb s3://BUCKET_NAME
 ```
 
-3. To prepare the application for deployment, use the `sam package` command.
+4. To prepare the application for deployment, use the `sam package` command.
 
 ```bash
 sam-app$ sam package \
@@ -20,7 +25,7 @@ sam-app$ sam package \
     --s3-bucket BUCKET_NAME
 ```
 
-4. Deploy the package
+5. Deploy the package
 
 ```bash
 sam-app$ sam deploy \
@@ -29,7 +34,7 @@ sam-app$ sam deploy \
     --capabilities CAPABILITY_IAM
 ```
 
-5. After deployment is complete you can run the following command to retrieve the API Gateway Endpoint URL:
+6. After deployment is complete you can run the following command to retrieve the API Gateway Endpoint URL:
 
 ```bash
 sam-app$ aws cloudformation describe-stacks \
