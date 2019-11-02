@@ -1,5 +1,8 @@
 # AWS Services per Region
 
+[![](https://img.shields.io/badge/Available-serverless%20app%20repository-blue.svg)](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:987919146615:applications~aws-services-by-region)
+
+
 This is a serverless application which provides an API endpoint to get AWS services with available regions.
 
 ## Deploy the sample application
