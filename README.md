@@ -115,6 +115,11 @@ With Region Names:
 These data are based on AWS's official [Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 This service provides the extracted data of the above page.
 
+## Demo
+
+* With region codes:  [https://aws-services.pubudu.dev/](https://aws-services.pubudu.dev).
+* With region names:  [https://aws-services.pubudu.dev/?region_names=true](https://aws-services.pubudu.dev/?region_names=true).
+
 # License
 
 MIT License (MIT)
