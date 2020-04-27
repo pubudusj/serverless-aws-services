@@ -10,7 +10,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - sam build
+      - sam package --template-file template.yml --s3-bucket $S3BUCKET --output-template-file packaged-template.yml
     finally:
       - echo This always runs even if the install command fails
   post_build:
