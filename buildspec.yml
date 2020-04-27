@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - sam build
+      - sam build --use-container
     finally:
       - echo This always runs even if the install command fails
   post_build:
