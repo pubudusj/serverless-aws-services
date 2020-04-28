@@ -32,7 +32,8 @@ regions_map = {
     'Hong Kong': 'ap-east-1',
     'Beijing': 'cn-north-1',
     'Ningxia': 'cn-northwest-1',
-    'Cape Town': 'af-south-1'
+    'Cape Town': 'af-south-1',
+    'Milan': 'eu-south-1'
 }
 
 
